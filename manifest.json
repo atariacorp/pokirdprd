@@ -1,0 +1,16 @@
+{
+  "name": "Sistem Informasi Terpadu",
+  "short_name": "Sistem Terpadu",
+  "description": "Aplikasi Manajemen dan Laporan Terpadu",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e293b",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/5968/5968260.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
