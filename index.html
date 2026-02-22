@@ -884,8 +884,10 @@ self.addEventListener('activate', event => {
                 
                 // Siapkan blok pengganti
                 const strConfig = JSON.stringify(configObj, null, 4);
-                const regexConfig = /const SYS_FIREBASE_CONFIG = null;/g;
-                const regexKey = /const SYS_GEMINI_KEY = null;/g;
+                
+                // Menggunakan Regex yang lebih kebal terhadap perubahan format spasi browser
+                const regexConfig = /const\s+SYS_FIREBASE_CONFIG\s*=\s*null\s*;/g;
+                const regexKey = /const\s+SYS_GEMINI_KEY\s*=\s*null\s*;/g;
                 
                 // Injeksi Kode ke HTML
                 const finalHtml = baseHtml
